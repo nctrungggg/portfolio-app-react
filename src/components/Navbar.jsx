@@ -28,12 +28,12 @@ const Navbar = () => {
         </div>
         {isDarkMode ? (
           <BsSunFill
-            className="text-xl text-primary cursor-pointer xl:text-3xl "
+            className="text-xl text-primary cursor-pointer xl:text-2xl "
             onClick={() => toggleDarkMode(!isDarkMode)}
           />
         ) : (
           <FaMoon
-            className="text-xl  text-primary cursor-pointer xl:text-3xl "
+            className="text-xl  text-primary cursor-pointer xl:text-2xl "
             onClick={() => toggleDarkMode(!isDarkMode)}
           />
         )}
@@ -92,7 +92,7 @@ const Navbar = () => {
               className="social-item__link"
               href="https://www.facebook.com/trungg.nguyen.3576/"
             >
-              Facebook <FaFacebook size={30} />
+              Facebook <FaFacebook size={24} />
             </a>
           </li>
 
@@ -101,19 +101,19 @@ const Navbar = () => {
               className="social-item__link"
               href="https://github.com/nctrungggg"
             >
-              Github <FaGithub size={30} />
+              Github <FaGithub size={24} />
             </a>
           </li>
 
           <li className="social-item bg-[#6fc2b0]">
             <a className="social-item__link" href="/">
-              Email <HiOutlineMail size={30} />
+              Email <HiOutlineMail size={24} />
             </a>
           </li>
 
           <li className="social-item bg-[#565f69]">
             <a className="social-item__link" href="/">
-              Resume <BsFillPersonLinesFill size={30} />
+              Resume <BsFillPersonLinesFill size={24} />
             </a>
           </li>
         </ul>

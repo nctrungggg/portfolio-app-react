@@ -8,7 +8,7 @@ import Work from "./components/Work";
 
 function App() {
   return (
-    <div className=" font-poppins text-gray dark:text-[#ccd6f6] dark:bg-gray bg-slate-300 ">
+    <div className=" font-poppins text-gray dark:text-white dark:bg-gray bg-slate-300 ">
       <Navbar />
       <Home />
       <About />

@@ -36,7 +36,7 @@ function ScollButton(props) {
       className={isShow ? "scroll-btn show" : "scroll-btn"}
     >
       <div className="scroll-btn__icon ">
-        <HiArrowNarrowUp className="text-gray dark:text-[#ccd6f6]" />
+        <HiArrowNarrowUp className="text-gray dark:text-white" />
       </div>
     </div>
   );

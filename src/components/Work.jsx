@@ -70,20 +70,20 @@ const Work = () => {
               className="shadow-lg shadow-indigo-500/30 group container  flex justify-center items-center mx-auto content-div rounded-md z-10 "
             >
               {/* Hover Effects */}
-              <div className="transition-all duration-500  opacity-0  group-hover:opacity-100 text-center">
+              <div className="transition-all  opacity-0  group-hover:opacity-100 text-center">
                 <span className="text-2xl md:text-3xl font-medium  tracking-wider ">
                   {work.title}
                 </span>
 
                 <div className="pt-8 text-center">
                   <a href={work.link}>
-                    <button className="text-14 text-center rounded-md w-[80px] py-2 m-2  text-gray bg-[#ccd6f6] text-base">
+                    <button className="text-14 text-center rounded-md w-[80px] py-2 m-2  text-gray bg-white text-base">
                       Demo
                     </button>
                   </a>
 
                   <a href={work.source}>
-                    <button className="text-14 text-center rounded-md w-[80px] py-2 m-2  text-gray bg-[#ccd6f6] text-base">
+                    <button className="text-14 text-center rounded-md w-[80px] py-2 m-2  text-gray bg-white text-base">
                       Code
                     </button>
                   </a>
