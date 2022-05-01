@@ -19,7 +19,7 @@ const Home = () => {
           building responsive front-end web applications.
         </p>
         <div>
-          <button className=" font-medium  group border-2 px-6 py-3 mt-4 flex items-center dark:hover:text-primary dark:hover:border-primary">
+          <button className="rounded-md font-medium  group border-2 px-6 py-3 mt-4 flex items-center dark:hover:text-primary dark:hover:border-primary">
             View Work
             <span className="group-hover:rotate-90 duration-300 ">
               <HiArrowNarrowRight className="ml-3 " />

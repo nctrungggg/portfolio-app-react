@@ -32,7 +32,7 @@ const Skills = () => {
           {skillList.map((skill) => (
             <div
               key={skill.id}
-              className="shadow-md shadow-slate-200 dark:shadow-[#040c16] hover:scale-110 duration-500"
+              className="rounded-md shadow-md shadow-slate-200 dark:shadow-[#040c16] hover:scale-110 duration-500"
             >
               <img className="w-20 mx-auto" src={skill.img} alt={skill.alt} />
               <p className="font-medium my-4 md:text-base">{skill.title}</p>

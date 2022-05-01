@@ -11,13 +11,25 @@
   body::-webkit-scrollbar {
     display: none;
   }
+
   li {
     @apply px-4;
     @apply cursor-pointer;
   }
+
   p {
     font-size: 14px;
     color: #708090;
+  }
+}
+
+@layer components {
+  .social-item {
+    @apply w-[160px] h-[60px] flex justify-between items-center  ml-[-100px] hover:ml-[-10px] duration-300 rounded-md;
+  }
+
+  .social-item__link {
+    @apply flex justify-between items-center w-full;
   }
 }
 

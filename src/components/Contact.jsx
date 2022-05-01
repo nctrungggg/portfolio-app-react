@@ -12,7 +12,7 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="mb-8">
-          <h1 className="text-4xl md:text-6xl font-semibold  inline border-b-4 border-primary ">
+          <h1 className="text-3xl md:text-6xl font-semibold  inline border-b-4 border-primary ">
             Contact
           </h1>
           <p className="md:text-base pt-8">
@@ -20,25 +20,25 @@ const Contact = () => {
           </p>
         </div>
         <input
-          className="bg-[#ccd6f6] p-2 outline-none text-gray"
+          className="bg-[#ccd6f6] py-2 px-4 outline-none text-gray  rounded-md"
           type="text"
           placeholder="Name"
           name="name"
         />
         <input
-          className="my-4 p-2 bg-[#ccd6f6] outline-none text-gray"
+          className="my-4 py-2 px-4 bg-[#ccd6f6] outline-none text-gray rounded-md"
           type="email"
           placeholder="Email"
           name="email"
         />
         <textarea
-          className="bg-[#ccd6f6] p-2 outline-none text-gray max-h-[150px]"
+          className="bg-[#ccd6f6] py-2 px-4 outline-none text-gray max-h-[150px] rounded-md"
           name="message"
           rows="8"
           placeholder="Message"
         ></textarea>
 
-        <button className=" border-2 hover:text-primary hover:border-primary px-4 py-3 my-8 mx-auto flex items-center">
+        <button className=" rounded-md border-2 hover:text-primary hover:border-primary px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
         </button>
       </form>

@@ -21,7 +21,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-6  ">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-6 z-30 ">
       <div className="flex items-center gap-4">
         <div className=" text-xl md:text-2xl font-semibold tracking-[4px] ">
           NCT
@@ -64,7 +64,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-slate-300 dark:bg-gray flex flex-col justify-center items-center"
+            : "  absolute top-0 left-0 w-full h-screen bg-slate-300 dark:bg-gray flex flex-col justify-center items-center"
         }
       >
         {menuLink.map((item, idx) => (
@@ -86,36 +86,33 @@ const Navbar = () => {
 
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-blue-600">
+        <ul className="flex flex-col gap-1">
+          <li className="social-item bg-blue-600">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="social-item__link"
               href="https://www.facebook.com/trungg.nguyen.3576/"
             >
               Facebook <FaFacebook size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#333333]">
+
+          <li className="social-item bg-[#333333]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="social-item__link"
               href="https://github.com/nctrungggg"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#6fc2b0]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
+
+          <li className="social-item bg-[#6fc2b0]">
+            <a className="social-item__link" href="/">
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#565f69]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
+
+          <li className="social-item bg-[#565f69]">
+            <a className="social-item__link" href="/">
               Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>
