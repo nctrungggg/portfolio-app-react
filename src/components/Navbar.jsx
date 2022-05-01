@@ -21,21 +21,19 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-6 ">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-6  ">
       <div className="flex items-center gap-4">
-        <div className=" text-xl md:text-2xl font-semibold tracking-[5px] ">
+        <div className=" text-xl md:text-2xl font-semibold tracking-[4px] ">
           NCT
         </div>
         {isDarkMode ? (
           <BsSunFill
-            fontSize="22px"
-            className="text-yellow cursor-pointer xl:text-3xl "
+            className="text-xl text-primary cursor-pointer xl:text-3xl "
             onClick={() => toggleDarkMode(!isDarkMode)}
           />
         ) : (
           <FaMoon
-            fontSize="22px"
-            className=" text-yellow cursor-pointer xl:text-3xl "
+            className="text-xl  text-primary cursor-pointer xl:text-3xl "
             onClick={() => toggleDarkMode(!isDarkMode)}
           />
         )}
@@ -44,7 +42,7 @@ const Navbar = () => {
       {/* menu */}
       <ul className="hidden md:flex">
         {menuLink.map((item, idx) => (
-          <li key={idx} className="hover:text-pink-600  transition-all">
+          <li key={idx} className="hover:text-primary  transition-all">
             <Link to={item.to} smooth={true} duration={500}>
               {item.title}
             </Link>
@@ -72,7 +70,7 @@ const Navbar = () => {
         {menuLink.map((item, idx) => (
           <li
             key={idx}
-            className=" py-6 text-xl hover:text-yellow transition-all"
+            className=" py-6 text-xl hover:text-primary transition-all"
           >
             <Link
               onClick={handleClick}
