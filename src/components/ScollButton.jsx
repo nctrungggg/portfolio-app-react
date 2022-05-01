@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { HiArrowNarrowUp } from "react-icons/hi";
 import "../sass/ScrollButton.scss";
+import { Link } from "react-scroll";
 
 ScollButton.propTypes = {};
 
 function ScollButton(props) {
   const [isShow, setIsShow] = useState(false);
-
-  const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   const handleScroll = () => {
     if (window.scrollY > 500) {
@@ -31,14 +25,13 @@ function ScollButton(props) {
   }, []);
 
   return (
-    <div
-      onClick={handleScrollToTop}
-      className={isShow ? "scroll-btn show" : "scroll-btn"}
-    >
-      <div className="scroll-btn__icon ">
-        <HiArrowNarrowUp className="text-gray dark:text-white" />
+    <Link to="home" smooth={true} duration={500}>
+      <div className={isShow ? "scroll-btn show" : "scroll-btn"}>
+        <div className="scroll-btn__icon ">
+          <HiArrowNarrowUp className="text-gray dark:text-white" />
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

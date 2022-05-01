@@ -43,7 +43,7 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         {menuLink.map((item, idx) => (
           <li key={idx} className="hover:text-primary  transition-all">
-            <Link to={item.to} smooth={true} duration={500}>
+            <Link to={item.to} smooth={true} duration={500} >
               {item.title}
             </Link>
           </li>
