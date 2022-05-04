@@ -33,9 +33,6 @@
 }
 
 .content-div {
-  -webkit-transition: background-image 5s ease-in-out;
-  transition: background-image 5s ease-in-out;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,8 +40,6 @@
 }
 
 .content-div:hover {
-  -webkit-transition: background-image 5s ease-in-out;
-  transition: background-image 5s ease-in-out;
   background-image: linear-gradient(
     to right,
     rgba(112, 157, 255, 0.8),

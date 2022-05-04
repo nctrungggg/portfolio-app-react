@@ -61,28 +61,28 @@ const Work = () => {
         </div>
 
         {/* Grid Container */}
-        <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-6 ">
+        <div className="transition-all duration-1000  mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-6 ">
           {/* Grid Item */}
           {works.map((work) => (
             <div
               key={work.id}
               style={{ backgroundImage: `url(${work.img})` }}
-              className="shadow-lg shadow-indigo-500/30 group container  flex justify-center items-center mx-auto content-div rounded-md z-10 "
+              className=" content-div shadow-lg shadow-indigo-500/30 group container  flex justify-center items-center mx-auto rounded-md z-10 "
             >
               {/* Hover Effects */}
-              <div className="transition-all  opacity-0  group-hover:opacity-100 text-center">
+              <div className="hidden group-hover:block text-center  ">
                 <span className="text-2xl md:text-3xl font-medium  tracking-wider ">
                   {work.title}
                 </span>
 
                 <div className="pt-8 text-center">
-                  <a href={work.link}>
+                  <a href={work.link} target="_blank">
                     <button className="text-14 text-center rounded-md w-[80px] py-2 m-2  text-gray bg-white text-base">
                       Demo
                     </button>
                   </a>
 
-                  <a href={work.source}>
+                  <a href={work.source} target="_blank">
                     <button className="text-14 text-center rounded-md w-[80px] py-2 m-2  text-gray bg-white text-base">
                       Code
                     </button>
