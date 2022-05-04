@@ -11,7 +11,7 @@ const Contact = () => {
         action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"
         className="flex flex-col max-w-[600px] w-full"
       >
-        <div className="mb-8">
+        <div className="mb-8 wow fadeInLeft">
           <h1 className="text-3xl md:text-6xl font-semibold  inline border-b-4 border-primary ">
             Contact
           </h1>

@@ -42,11 +42,11 @@ const Navbar = () => {
       {/* menu */}
       <ul className="hidden md:flex">
         {menuLink.map((item, idx) => (
-          <li key={idx} className="hover:text-primary  transition-all">
-            <Link to={item.to} smooth={true} duration={500}>
+          <Link to={item.to} smooth={true} duration={500}>
+            <li key={idx} className="hover:text-primary  transition-all">
               {item.title}
-            </Link>
-          </li>
+            </li>
+          </Link>
         ))}
       </ul>
 
@@ -63,8 +63,8 @@ const Navbar = () => {
       <ul
         className={
           !nav
-            ? "hidden "
-            : "  absolute top-0 left-0 w-full h-screen bg-slate-300 dark:bg-gray flex flex-col justify-center items-center"
+            ? " menu-mobile opacity-0 invisible translate-x-full "
+            : "menu-mobile   translate-x-0 visible opacity-100 "
         }
       >
         {menuLink.map((item, idx) => (

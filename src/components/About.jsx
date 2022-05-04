@@ -13,12 +13,12 @@ const About = () => {
           <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 md:px-4">
-          <div>
+          <div className=" wow fadeInLeft">
             <h2 className="text-2xl md:text-4xl font-medium sm:text-right">
               Hi. I'm Trung, nice to meet you. Please take a look around.
             </h2>
           </div>
-          <div>
+          <div className=' wow fadeInRight'>
             <p className="md:text-base">
               I am passionate about building excellent software that improves
               the lives of those around me. I specialize in creating software

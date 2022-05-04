@@ -2,9 +2,11 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen ">
+    <div name="home" className="w-full h-screen   ">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+      <div
+        className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full  wow fadeInLeft"
+      >
         <p className="md:text-16 text-primary ">Hi, my name is</p>
         <h1 className="text-3xl dark:text-[#d4ddfd] md:text-6xl font-semibold mb-1 lg:mb-4">
           Trung Nguyen
