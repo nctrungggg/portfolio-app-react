@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BsFillPersonLinesFill, BsSunFill } from "react-icons/bs";
 import { FaFacebook, FaGithub, FaMoon } from "react-icons/fa";
 import { HiOutlineMail, HiOutlineMenu } from "react-icons/hi";
@@ -16,12 +16,33 @@ const menuLink = [
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const headerRef = useRef(null);
   const [isDarkMode, toggleDarkMode] = useDarkMode();
 
   const handleClick = () => setNav(!nav);
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
+      ) {
+        headerRef.current?.classList.add("shrink");
+      } else {
+        headerRef.current?.classList.remove("shrink");
+      }
+    });
+
+    return () => {
+      window.removeEventListener("scroll", null);
+    };
+  }, []);
+
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-6 z-30 ">
+    <div
+      ref={headerRef}
+      className="fixed w-full h-[100px] flex justify-between items-center px-6 z-30 transition-all duration-500  "
+    >
       <div className="flex items-center gap-4">
         <div className=" text-xl md:text-2xl font-semibold tracking-[4px] ">
           NCT
@@ -33,7 +54,7 @@ const Navbar = () => {
           />
         ) : (
           <FaMoon
-            className="text-xl  text-primary cursor-pointer xl:text-2xl "
+            className="text-xl  text-purple cursor-pointer xl:text-2xl "
             onClick={() => toggleDarkMode(!isDarkMode)}
           />
         )}
@@ -43,7 +64,10 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         {menuLink.map((item, idx) => (
           <Link to={item.to} smooth={true} duration={500}>
-            <li key={idx} className="hover:text-primary  transition-all">
+            <li
+              key={idx}
+              className="font-medium hover:text-purple dark:hover:text-primary  transition-all"
+            >
               {item.title}
             </li>
           </Link>
@@ -71,7 +95,7 @@ const Navbar = () => {
           {menuLink.map((item, idx) => (
             <li
               key={idx}
-              className=" py-6 text-xl hover:text-primary transition-all"
+              className="font-medium py-6 text-xl hover:text-purple dark:hover:text-primary transition-all"
             >
               <Link
                 onClick={handleClick}

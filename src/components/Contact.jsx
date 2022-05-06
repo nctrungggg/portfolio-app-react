@@ -12,7 +12,7 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="mb-8 wow fadeInLeft">
-          <h1 className="text-3xl md:text-6xl font-semibold  inline border-b-4 border-primary ">
+          <h1 className="text-3xl md:text-6xl font-semibold  inline border-b-4 border-purple dark:border-primary ">
             Contact
           </h1>
           <p className="md:text-base pt-8">

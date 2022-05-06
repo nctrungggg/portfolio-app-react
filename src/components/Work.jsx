@@ -55,7 +55,7 @@ const Work = () => {
     <div name="work" className="w-full md:h-screen mb-32">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full">
         <div className="wow fadeInLeft">
-          <h1 className="text-4xl  md:text-6xl font-semibold inline border-b-4 text-gray-300 border-primary">
+          <h1 className="text-4xl  md:text-6xl font-semibold inline border-b-4 text-gray-300 border-purple dark:border-primary">
             Work
           </h1>
 

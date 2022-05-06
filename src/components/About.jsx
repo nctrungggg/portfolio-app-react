@@ -6,7 +6,7 @@ const About = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 md:pl-4">
-            <h1 className="text-3xl md:text-6xl font-semibold inline border-b-4 border-primary">
+            <h1 className="text-3xl md:text-6xl font-semibold inline border-b-4 border-purple dark:border-primary">
               About
             </h1>
           </div>
@@ -18,7 +18,7 @@ const About = () => {
               Hi. I'm Trung, nice to meet you. Please take a look around.
             </h2>
           </div>
-          <div className=' wow fadeInRight'>
+          <div className=" wow fadeInRight">
             <p className="md:text-base">
               I am passionate about building excellent software that improves
               the lives of those around me. I specialize in creating software
