@@ -1,9 +1,8 @@
 import React from "react";
-import WorkImg from "../assets/workImg.jpeg";
+import bankistApp from "../assets/bankist-app.png";
+import freshFood from "../assets/freshfood.png";
 import laslesVPN from "../assets/laslesVPN.png";
 import nctShop from "../assets/nct-shop.png";
-import freshFood from "../assets/freshfood.png";
-import bankistApp from "../assets/bankist-app.png";
 import Omnifood from "../assets/omnifood.png";
 
 const works = [

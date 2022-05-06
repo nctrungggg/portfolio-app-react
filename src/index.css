@@ -32,8 +32,9 @@
   }
 
   .menu-mobile {
-    @apply transition-all duration-500 absolute top-0 left-0 w-full h-screen bg-slate-300/[.92] dark:bg-gray/[.92] flex flex-col justify-center items-center;
+    @apply transition-all duration-500 absolute top-0 left-0 w-full h-screen  bg-gradient-to-b from-slate-200/[.93] to-slate-300/[.93]  dark:from-gray/[.93] dark:to-[#213f50]/[.93] flex flex-col justify-center items-center;
   }
+  
   .shrink {
     @apply shadow-lg h-[80px] !important;
   }
