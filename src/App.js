@@ -8,7 +8,7 @@ import Work from "./components/Work";
 
 function App() {
   return (
-    <div className=" font-poppins text-gray dark:text-white dark:bg-gray bg-slate-300 ">
+    <div className=" font-poppins text-gray dark:text-white from-slate-300 to-slate-400 bg-gradient-to-b dark:from-gray dark:to-[#213f50] ">
       <Navbar />
       <Home />
       <About />

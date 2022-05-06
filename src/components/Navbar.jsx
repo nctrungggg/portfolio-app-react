@@ -60,29 +60,57 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      <ul
+      <div
         className={
           !nav
             ? " menu-mobile opacity-0 invisible translate-x-full "
             : "menu-mobile   translate-x-0 visible opacity-100 "
         }
       >
-        {menuLink.map((item, idx) => (
-          <li
-            key={idx}
-            className=" py-6 text-xl hover:text-primary transition-all"
-          >
-            <Link
-              onClick={handleClick}
-              to={item.to}
-              smooth={true}
-              duration={500}
+        <ul>
+          {menuLink.map((item, idx) => (
+            <li
+              key={idx}
+              className=" py-6 text-xl hover:text-primary transition-all"
             >
-              {item.title}
-            </Link>
+              <Link
+                onClick={handleClick}
+                to={item.to}
+                smooth={true}
+                duration={500}
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <ul className="flex gap-4 absolute bottom-8 z-50">
+          <li className="text-[#ccd6f6]  bg-blue-600 py-2 px-6 rounded-md transition-all  translate-y-0 hover:-translate-y-3 ">
+            <a className="" href="https://www.facebook.com/trungg.nguyen.3576/">
+              <FaFacebook size={24} />
+            </a>
           </li>
-        ))}
-      </ul>
+
+          <li className=" text-[#ccd6f6] bg-[#333333] py-2 px-6 rounded-md transition-all  translate-y-0 hover:-translate-y-3">
+            <a className="" href="https://github.com/nctrungggg">
+              <FaGithub size={24} />
+            </a>
+          </li>
+
+          <li className="text-[#ccd6f6]  bg-[#6fc2b0] py-2 px-6 rounded-md transition-all  translate-y-0 hover:-translate-y-3">
+            <a className="" href="/">
+              <HiOutlineMail size={24} />
+            </a>
+          </li>
+
+          <li className="text-[#ccd6f6]  bg-[#565f69] py-2 px-6 rounded-md transition-all  translate-y-0 hover:-translate-y-3">
+            <a className="" href="/">
+              <BsFillPersonLinesFill size={24} />
+            </a>
+          </li>
+        </ul>
+      </div>
 
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">

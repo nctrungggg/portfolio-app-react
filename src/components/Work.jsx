@@ -1,46 +1,50 @@
 import React from "react";
 import WorkImg from "../assets/workImg.jpeg";
-import realEstate from "../assets/realestate.jpg";
+import laslesVPN from "../assets/laslesVPN.png";
+import nctShop from "../assets/nct-shop.png";
+import freshFood from "../assets/freshfood.png";
+import bankistApp from "../assets/bankist-app.png";
+import Omnifood from "../assets/omnifood.png";
 
 const works = [
   {
     id: 1,
-    img: WorkImg,
+    img: nctShop,
     title: "E-commerce",
     link: "https://nct-shop.vercel.app/",
     source: "https://github.com/nctrungggg/nct-shop",
   },
   {
     id: 2,
-    img: realEstate,
+    img: laslesVPN,
     title: "LaslesVPN",
     link: "https://nctrungggg.github.io/LaslesVPN/",
     source: "https://github.com/nctrungggg/LaslesVPN",
   },
   {
     id: 3,
-    img: WorkImg,
+    img: freshFood,
     title: "FreshFood",
     link: "https://nctrungggg.github.io/FreshFood/",
     source: "https://github.com/nctrungggg/FreshFood",
   },
   {
     id: 4,
-    img: realEstate,
+    img: bankistApp,
     title: "Bankist-app",
-    link: "https://nctrungggg.github.io/FreshFood/",
+    link: "https://nctrungggg.github.io/Bankist-app/",
     source: "https://github.com/nctrungggg/Bankist-app",
   },
   {
     id: 5,
-    img: WorkImg,
+    img: Omnifood,
     title: "Omnifood",
     link: "https://omnifood-orcin.vercel.app/",
     source: "https://github.com/nctrungggg/Omnifood",
   },
   {
     id: 6,
-    img: realEstate,
+    img: laslesVPN,
     title: "FreshFood",
     link: "",
     source: "",
